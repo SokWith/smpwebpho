@@ -3,7 +3,7 @@ session_start(); // 开始会话
 
 $albumDir = 'albums/';
 $albums = glob($albumDir . '*.txt');
-$correctPassword = 'addroot'; // 设置固定的口令
+$correctPassword = 'admin'; // 设置固定的口令
 
 // 处理备份相册的操作
 if (isset($_POST['backup']) && isset($_SESSION['password']) && $_SESSION['password'] === $correctPassword) {
