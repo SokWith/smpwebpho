@@ -1,11 +1,5 @@
----
-title: WebPho
-emoji: 👀
-colorFrom: red
-colorTo: red
-sdk: docker
-pinned: false
-license: mit
----
+一个简易的网络图片存储器； 
+将收集的图片URL地址保存在以相册命名的txt文件里面，实现分类预览。 
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+可以后台管理相册（演示站点密码: admin ），添加或者删除图片；
+也可以备份下来，备份的都是图片URL地址。
