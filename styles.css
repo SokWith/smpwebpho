@@ -1,0 +1,93 @@
+/* ��վȫ����ʽ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ������ʽ */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+/* ��������ʽ */
+h2, h3 {
+    color: #333;
+}
+
+div {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* �������ͼ��ʽ */
+.album-thumbnail {
+    width: 100px; /* ��������ͼ�Ŀ���Ϊ30���� */
+    height: 100px; /* ��������ͼ�ĸ߶�Ϊ30���� */
+    object-fit: cover; /* ȷ��ͼƬ����ʧ�� */
+    margin-right: 10px;
+}
+
+/* �ٲ���������ʽ */
+.waterfall {
+    column-count: 4; /* �����Ը�����Ҫ�������� */
+    column-gap: 10px; /* ������֮��ļ�� */
+    margin: 0 10px;
+}
+
+.waterfall .item {
+    break-inside: avoid; /* ��ֹͼƬ���зָ� */
+    margin-bottom: 10px; /* ͼƬ��ͼƬ֮��ļ�� */
+}
+
+.waterfall img {
+    width: 300px; /* ����ͼƬ�Ŀ���Ϊ300���� */
+    height: 300px; /* ����ͼƬ�ĸ߶�Ϊ300���� */
+    object-fit: cover; /* ����ͼƬ�ı���������Ĳ��ֻᱻ�ü� */
+    border-radius: 5px; /* ��ѡ��ΪͼƬ����Բ�Ǳ߿� */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ��ѡ��ΪͼƬ������Ӱ */
+}
+
+/* ��Ӧʽ��ƣ�������Ļ��С�����ٲ������� */
+@media (max-width: 800px) {
+    .waterfall {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .waterfall {
+        column-count: 1;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#loading {
+    /* 其他样式保持不变 */
+    /* 添加动画 */
+    animation: blink 1s linear infinite;
+}
